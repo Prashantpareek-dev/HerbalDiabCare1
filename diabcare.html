@@ -11,9 +11,6 @@
   <!-- Swiper CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
 
-
-
-
   <style>
     /* Disable text selection & basic UX protections */
     /* disable selection & dragging */
@@ -551,7 +548,7 @@
       justify-content: center;
       align-items: stretch;
       gap: 15px;
-      flex-wrap: wrap;
+      flex-wrap: nowrap;
       overflow-x: hidden;
     }
 
@@ -560,7 +557,7 @@
     }
 
     .compare-card {
-      flex: 1 1 260px;
+      flex: 1 1 0;
       border-radius: 20px;
       padding: 25px 15px;
       color: #fff;
@@ -896,15 +893,15 @@
       grid-column: 1 / -1;
     }
 
-    /* Compare cards: stack on small screens */
+    /* Compare cards: always in a row */
     @media(max-width:600px) {
       .compare-card {
-        flex: 1 1 100%;
+        flex: 1 1 0;
         min-width: 0;
       }
 
       .compare-container.sidebyside {
-        flex-wrap: wrap;
+        flex-wrap: nowrap;
       }
 
       .doctor-video {
@@ -1292,7 +1289,6 @@
     }
   </style>
 
-
 </head>
 
 <body>
@@ -1544,7 +1540,7 @@
   </section>
 
   <section id="order" style="overflow: hidden;">
-    <div class="offer-content">
+     <div class="offer-content">
       <img src="img/HerbalDiabCare.png" alt="Herbal Diab Care" width="300" height="300">
       <h2 class="offer-title">BUY 1 GET 1 FREE </h2>
       <p class="offer-subtitle">🎁 Limited Time Offer – Hurry Up!</p>
@@ -1591,7 +1587,7 @@
           return true;
         }
       </script>
-    </div>
+     </div>
   </section>
 
   <!-- 🎥 Customer YouTube Review Section -->
@@ -1663,10 +1659,6 @@
 
   </section>
 
-
- 
-
-
   <!-- 🌟 Sticky Premium Button -->
   <!-- <button id="offerBtn" class="sticky-btn">Order Now</button> -->
 
@@ -1684,8 +1676,6 @@
       window.location.href = "#order"; // 🔗 Replace with your order link
     });
   </script> -->
-
-
 
   <footer>
     <!-- Brand Info (Left Side) -->
